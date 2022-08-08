@@ -61,7 +61,7 @@ jobs:
       with:
         token: ${{ secrets.ORG_PAT }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: codeql-default-results
         path: alerts.xlsx
@@ -120,7 +120,7 @@ jobs:
       with:
         token: ${{ secrets.ORG_PAT }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: codeql-extended-results
         path: alerts.xlsx
@@ -179,7 +179,7 @@ jobs:
       with:
         token: ${{ secrets.ORG_PAT }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: codeql-quality-results
         path: alerts.xlsx

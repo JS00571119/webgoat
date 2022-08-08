@@ -19,7 +19,7 @@ jobs:
       with:
         token: ${{ secrets.ORG_PAT }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: results
         path: alerts.xlsx    
